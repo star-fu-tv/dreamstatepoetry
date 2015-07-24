@@ -1,0 +1,22 @@
+/* rainbow love */
+h1 {
+	color: hotpink;
+	text-align:center;
+	margin-left:auto;
+	margin-right: auto;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 88px;
+	padding: 12px;
+	cusror: hand;
+}
+
+pre#dna {
+	font-size: 10px;
+	line-height: 10px;
+}
+
+#IRL {
+	position:relative;
+	z-index: 3000;
+}

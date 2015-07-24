@@ -1,0 +1,1126 @@
+@import url(http://fonts.googleapis.com/css?family=Russo+One);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Montserrat+Alternates|Ubuntu+Condensed|Francois+One|Inconsolata|Special+Elite|VT323|Share+Tech+Mono);
+@font-face {
+  font-family: 'governor';
+  src: url("governor-webfont.eot");
+  src: url("governor-webfont.eot?#iefix") format("embedded-opentype"), url("governor-webfont.woff") format("woff"), url("governor-webfont.ttf") format("truetype"), url("governor-webfont.svg#governorregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Imports   http://www.hongkiat.com/blog/pixel-based-websites/  
+---------------------------------------------------- */
+/*********************
+   * ~ GALLERY ~ *
+*********************/
+/* line 5, ../sass/_gallery.scss */
+div.holojam-gallery-outer {
+  height: 300px;
+}
+
+/* line 10, ../sass/_gallery.scss */
+img.small-top-logo {
+  width: 200px;
+  height: 180px;
+}
+
+/*********************
+  * ~ PARALLAX ~ *
+*********************/
+/* line 4, ../sass/_FX.scss */
+#parallax {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../sass/_FX.scss */
+.parallax-viewport {
+  position: relative;
+  /* relative, absolute, fixed */
+  overflow: hidden;
+}
+
+/* line 17, ../sass/_FX.scss */
+.parallax-layer, #port {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 23, ../sass/_FX.scss */
+#p-layer1 {
+  opacity: 0.5;
+  background: url(../img/large-nebula.png);
+  background-size: cover;
+}
+
+/* line 29, ../sass/_FX.scss */
+#p-layer2 {
+  opacity: 0.5;
+  background: url(../img/clouds.png);
+  background-size: cover;
+}
+
+/*********************
+  * ~ ROTATE ~ *
+*********************/
+@-webkit-keyframes rotate {
+  /* line 39, ../sass/_FX.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 42, ../sass/_FX.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotation1 {
+  /* line 48, ../sass/_FX.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 49, ../sass/_FX.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotation1 {
+  /* line 52, ../sass/_FX.scss */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 53, ../sass/_FX.scss */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotation1 {
+  /* line 56, ../sass/_FX.scss */
+  from {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 57, ../sass/_FX.scss */
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation1 {
+  /* line 60, ../sass/_FX.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 61, ../sass/_FX.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 64, ../sass/_FX.scss */
+.vector1 {
+  -moz-animation: rotation1 20s linear infinite;
+  -o-animation: rotation1 20s linear infinite;
+  -webkit-animation: rotation1 20s linear infinite;
+  animation: rotation1 20s linear infinite;
+}
+
+/*********************
+   * ~ FADE OUT ~ *
+*********************/
+@-webkit-keyframes fadeOut {
+  /* line 75, ../sass/_FX.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 75, ../sass/_FX.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 76, ../sass/_FX.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 76, ../sass/_FX.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  /* line 77, ../sass/_FX.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 77, ../sass/_FX.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  /* line 78, ../sass/_FX.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 78, ../sass/_FX.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+/* line 80, ../sass/_FX.scss */
+.fade-out {
+  opacity: 0;
+  -webkit-animation: fadeOut ease-in-out 1;
+  -moz-animation: fadeOut ease-in-out 1;
+  -o-animation: fadeOut ease-in-out 1;
+  animation: fadeOut ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 94, ../sass/_FX.scss */
+.fade-out-3s {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+/*********************
+   * ~ FADE IN ~ *
+*********************/
+@-webkit-keyframes fadeOut {
+  /* line 105, ../sass/_FX.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 105, ../sass/_FX.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 106, ../sass/_FX.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 106, ../sass/_FX.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeOut {
+  /* line 107, ../sass/_FX.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 107, ../sass/_FX.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  /* line 108, ../sass/_FX.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 108, ../sass/_FX.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 110, ../sass/_FX.scss */
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 124, ../sass/_FX.scss */
+.fade-in-3s {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+/*********************
+   * ~ MOVE BG ~ *
+*********************/
+@-webkit-keyframes slide {
+  /* line 136, ../sass/_FX.scss */
+  from {
+    background-position: top;
+  }
+
+  /* line 139, ../sass/_FX.scss */
+  to {
+    background-position: bottom;
+  }
+}
+
+/* line 144, ../sass/_FX.scss */
+div .scan-rainbows {
+  -webkit-animation: slide 60s ease-in infinite;
+  -webkit-animation-direction: alternate;
+}
+
+/*********************
+   * ~ GLITCH ~ *
+*********************/
+/* line 153, ../sass/_FX.scss */
+.glitch {
+  color: white;
+  font-size: 0px;
+  position: relative;
+  width: 268px;
+  height: 654px;
+  margin: 0 auto;
+  text-indent: -999em;
+  background: transparent url(http://cdn.hiphopwired.com/wp-content/uploads/2013/09/Vanellope-Von-Scweetz-wreck-it-ralph.png) center center no-repeat;
+}
+
+@keyframes noise-anim {
+  /* line 166, ../sass/_FX.scss */
+  0% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  5% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  10% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  15.0% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  20% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  25% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  30.0% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  35% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  40% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  45% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  50% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  55.0% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  60.0% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  65% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  70% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  75% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  80% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  85.0% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  90% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  95% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+
+  /* line 166, ../sass/_FX.scss */
+  100% {
+    clip: rect(random(654)px, 9999px, random(654)px, 0);
+  }
+}
+
+/* line 171, ../sass/_FX.scss */
+.glitch:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 2px;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+  background: inherit;
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+
+@keyframes noise-anim-2 {
+  /* line 189, ../sass/_FX.scss */
+  0% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  5% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  10% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  15.0% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  20% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  25% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  30.0% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  35% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  40% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  45% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  50% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  55.0% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  60.0% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  65% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  70% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  75% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  80% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  85.0% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  90% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  95% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+
+  /* line 189, ../sass/_FX.scss */
+  100% {
+    clip: rect(random(100)px, 9999px, random(100)px, 0);
+  }
+}
+
+/* line 195, ../sass/_FX.scss */
+.glitch:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+  background: inherit;
+  -webkit-filter: hue-rotate(300deg);
+  filter: hue-rotate(300deg);
+}
+
+/*********************
+   * ~ GRADIENTS ~ *
+*********************/
+/* line 214, ../sass/_FX.scss */
+.gradient-light-linear {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+/*********************
+   * ~ EMBOSS ~ *
+*********************/
+/* line 221, ../sass/_FX.scss */
+.embossed-light {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* line 226, ../sass/_FX.scss */
+.embossed-heavy {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.3), inset 0 -2px 3px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+/*********************
+  * ~ CONTROLS ~ *
+*********************/
+/* line 5, ../sass/_controls.scss */
+div.nav-wrapper {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 15, ../sass/_controls.scss */
+div.nav-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, ../sass/_controls.scss */
+h1.star, h2.star, h3.star {
+  padding: 0;
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 10px;
+  float: left;
+  text-align: center;
+}
+
+/* line 38, ../sass/_controls.scss */
+h3.star {
+  width: 10px;
+  font-size: 4px;
+}
+
+/* line 42, ../sass/_controls.scss */
+h2.star {
+  width: 20px;
+  font-size: 8px;
+}
+
+/* line 46, ../sass/_controls.scss */
+h1.star {
+  width: 20px;
+  font-size: 12px;
+}
+
+/* line 51, ../sass/_controls.scss */
+nav.single-holojam {
+  position: relative;
+  width: 252px;
+  height: 70px;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  cursor: hand;
+  background: transparent;
+  border: none;
+  border-bottom: 0;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  font-family: 'OCR A Std';
+  -moz-transition-duration: .6s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .6s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+/* line 82, ../sass/_controls.scss */
+nav.single-holojam div.nav-tab {
+  position: relative;
+  bottom: 0;
+}
+/* line 87, ../sass/_controls.scss */
+nav.single-holojam .atom-control {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 80px;
+  height: auto;
+  float: left;
+  margin-bottom: 25px;
+}
+/* line 96, ../sass/_controls.scss */
+nav.single-holojam .atom-control img {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: -2px;
+  margin: 0 auto;
+}
+/* line 105, ../sass/_controls.scss */
+nav.single-holojam a.next-holojam {
+  float: right;
+}
+/* line 107, ../sass/_controls.scss */
+nav.single-holojam a.next-holojam img {
+  height: 50px;
+}
+/* line 112, ../sass/_controls.scss */
+nav.single-holojam a.arrow {
+  color: white;
+  padding-top: 15px;
+  width: 35px;
+  display: inline;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  top: -5px;
+}
+/* line 123, ../sass/_controls.scss */
+nav.single-holojam a.arrow:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 127, ../sass/_controls.scss */
+nav.single-holojam div.pull-down-5 {
+  top: 5px;
+}
+/* line 130, ../sass/_controls.scss */
+nav.single-holojam a.prev-holojam {
+  text-align: right;
+  position: relative;
+  right: 5px;
+}
+/* line 135, ../sass/_controls.scss */
+nav.single-holojam a.next-holojam {
+  text-align: left;
+  position: relative;
+  left: 5px;
+}
+
+/* line 142, ../sass/_controls.scss */
+#controls {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  bottom: 70px;
+  display: none;
+}
+
+/* line 149, ../sass/_controls.scss */
+.stars {
+  padding: 0;
+}
+/* line 151, ../sass/_controls.scss */
+.stars h1, .stars h2, .stars h3 {
+  display: inline;
+  font-size: 10px;
+}
+
+/* line 157, ../sass/_controls.scss */
+nav.single-holojam:hover {
+  cursor: help;
+  background: rgba(170, 170, 170, 0.7);
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 174, ../sass/_controls.scss */
+#test-logo {
+  position: absolute;
+  z-index: 4000;
+  top: 200px;
+  background: #b4b4b4;
+}
+
+/* line 182, ../sass/_controls.scss */
+.nav-row {
+  position: relative;
+  top: 120px;
+}
+
+/* line 188, ../sass/_controls.scss */
+.nav-popup-box {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), #e8e8e8);
+}
+/* line 195, ../sass/_controls.scss */
+.nav-popup-box h2 {
+  font-family: 'governor';
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ccc;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
+}
+/* line 203, ../sass/_controls.scss */
+.nav-popup-box p {
+  color: #ccc;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* line 210, ../sass/_controls.scss */
+.nav-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.3);
+  background: url(../img/grey-city.png);
+  text-align: center;
+  background-size: cover;
+  font-family: 'governor';
+  z-index: -500;
+}
+/* line 232, ../sass/_controls.scss */
+.nav-overlay h1 {
+  font-size: 64px;
+  font-family: 'governor';
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ccc;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
+}
+/* line 241, ../sass/_controls.scss */
+.nav-overlay nav.popover-nav {
+  font-family: 'governor';
+}
+/* line 243, ../sass/_controls.scss */
+.nav-overlay nav.popover-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 1px 1px rgba(205, 205, 205, 0.4);
+}
+/* line 250, ../sass/_controls.scss */
+.nav-overlay nav.popover-nav ul li {
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+  letter-spacing: 2px;
+}
+/* line 256, ../sass/_controls.scss */
+.nav-overlay nav.popover-nav ul li a, .nav-overlay nav.popover-nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 266, ../sass/_controls.scss */
+#nav-info-box, #nav-contact-box {
+  display: none;
+}
+
+/* line 270, ../sass/_controls.scss */
+#nav-overlay {
+  opacity: 0;
+  z-index: -500;
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 282, ../sass/_controls.scss */
+#atom-controller:hover img {
+  -moz-animation: rotation1 20s linear infinite;
+  -o-animation: rotation1 20s linear infinite;
+  -webkit-animation: rotation1 20s linear infinite;
+  animation: rotation1 20s linear infinite;
+}
+
+/* Main stylez
+---------------------------------------------------- */
+/* line 5, ../sass/_venus.scss */
+body {
+  background: url(../img/rainbow_fuzz_.png);
+  background-size: cover;
+}
+
+/* Index overlay
+---------------------------------------------------- */
+/* line 22, ../sass/_venus.scss */
+div .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.9) url("../img/23.png");
+  background-size: cover;
+  opacity: .9;
+  text-align: center;
+  background: none;
+}
+
+/* Main Logo
+---------------------------------------------------- */
+/* line 48, ../sass/_venus.scss */
+#controls {
+  position: absolute;
+  bottom: 90px;
+  left: 34%;
+  height: 50px;
+  width: auto;
+  z-index: 200;
+}
+
+/* line 57, ../sass/_venus.scss */
+#info-retro {
+  position: fixed;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: 60px;
+  background: rgba(200, 200, 200, 0.9);
+  z-index: 200;
+  text-align: !important left;
+  -webkit-box-shadow: 0px 5px 30px rgba(127, 127, 127, 0.6), inset 0 0px 4px #7d7d7d, inset 0 0px 2px white;
+  -moz-box-shadow: 0px 5px 30px rgba(127, 127, 127, 0.6), inset 0 0px 4px #7d7d7d, inset 0 0px 2px white;
+  box-shadow: 0px 5px 30px rgba(127, 127, 127, 0.6), inset 0 0px 4px #7d7d7d, inset 0 0px 2px white;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#dddddd, #999999);
+  background-image: -moz-linear-gradient(#dddddd, #999999);
+  background-image: -o-linear-gradient(#dddddd, #999999);
+  background-image: linear-gradient(#dddddd, #999999);
+  border: 1px solid white;
+}
+
+/* line 73, ../sass/_venus.scss */
+#info {
+  position: fixed;
+  height: 200px;
+  width: 600px;
+  margin: 0 auto;
+  top: 10px;
+  left: 10px;
+  background: rgba(200, 200, 200, 0.3);
+  z-index: 200;
+  text-align: !important left;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#dddddd, #999999);
+  background-image: -moz-linear-gradient(#dddddd, #999999);
+  background-image: -o-linear-gradient(#dddddd, #999999);
+  background-image: linear-gradient(#dddddd, #999999);
+  background: none;
+}
+
+/* line 90, ../sass/_venus.scss */
+#loading {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20;
+  opacity: 1;
+  background: none;
+}
+
+/* Navigation Styles
+---------------------------------------------------- */
+/* line 105, ../sass/_venus.scss */
+ul.popup-navigation {
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 108, ../sass/_venus.scss */
+ul.popup-navigation li {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 26px;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+@-webkit-keyframes dash {
+  /* line 125, ../sass/_venus.scss */
+  from {
+    stroke-dashoffset: 30000;
+  }
+
+  /* line 129, ../sass/_venus.scss */
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* line 135, ../sass/_venus.scss */
+.path {
+  stroke-dasharray: 30000;
+  stroke-dashoffset: 0;
+  stroke-color: hotpink;
+  -webkit-animation: dash 3s ease-in-out alternate infinite;
+}
+
+/* gallery over the lake ;)
+---------------------------------------------------- */
+/* line 149, ../sass/_venus.scss */
+div .lake-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -200;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.95) url("../img/rainbow.png");
+  background: rgba(255, 255, 255, 0.9) url("../img/female-engine.png");
+  background: rgba(255, 255, 255, 0.9) url("../img/marble-level.png");
+  background: rgba(255, 255, 255, 0.9) url("../img/19.png");
+  background: rgba(255, 255, 255, 0.9) url("../img/23.png");
+  background-size: cover;
+  opacity: .9;
+  -webkit-animation: slide 60s ease-in infinite;
+  -webkit-animation-direction: alternate;
+}
+
+/* line 168, ../sass/_venus.scss */
+.rainbow-tech-4d {
+  color: white;
+  text-shadow: 0 -2px 0px #00bc3e, 0 2px 0px #ff64b4;
+}
+
+/* line 177, ../sass/_venus.scss */
+.mermaid-container {
+  width: 100%;
+}
+
+/* line 180, ../sass/_venus.scss */
+#lake-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*********************
+  * ~ LOADING ~ *
+*********************/
+/* line 4, ../sass/_loading.scss */
+.atom-overlay {
+  position: absolute;
+  opacity: 1;
+  z-index: 3000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: url(../img/rainbow_fuzz_.png);
+  background-size: cover;
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+  text-align: center;
+}
+/* line 26, ../sass/_loading.scss */
+.atom-overlay h1 {
+  color: white;
+  text-align: center;
+}
+
+/* line 34, ../sass/_loading.scss */
+#svg-atom-wrapper {
+  padding-top: 100px;
+}
+
+/* line 38, ../sass/_loading.scss */
+div.loading-overlay {
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+/* line 51, ../sass/_loading.scss */
+div.loading-overlay .overlay-overlay {
+  background: none;
+}
+
+/* line 60, ../sass/_loading.scss */
+#underpaper {
+  position: absolute;
+  opacity: 1;
+  z-index: 2900;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 81, ../sass/_loading.scss */
+#atom-loading-spinner {
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+  /* For Safari 3.1 to 6.0 */
+  /* Standard syntax */
+}
+
+/* line 27, ../sass/vision.scss */
+#single-holojam {
+  opacity: 0;
+}

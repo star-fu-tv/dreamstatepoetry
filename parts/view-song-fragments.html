@@ -1,0 +1,56 @@
+<div ng-controller="SongFragmentsController">
+	
+	<ng-include src="'parts/song-nav.html'"></ng-include>
+
+	<div class="container">
+	<header class="row" id="song-fragments-nav">
+		<ul class="nav nav-tabs nav-justified">
+			  <li role="presentation" class="active">
+			  	<a href="#">Content</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#">Senses</a>
+			  </li>
+			  <li role="presentation">
+			  	<a href="#">Thoughts</a>
+			  </li>
+		</ul>		
+	</header>
+
+	<section class="row fragments-wrapper">
+		
+		<div ng-repeat="descriptor in descriptors_list track by $index" class="fragment-descriptor-box col-lg-4">
+
+			<div class="">
+				
+				<header><h5>{{ descriptor.name }}</h5></header>
+				<!-- rotating list of prompts, maybe a carousel -->
+				<div class="prompts">
+					<ul class="prompts-list">
+						<li class="prompt">Describe it here, how does it make you feel?</li>
+					</ul>
+					
+				</div>
+				<!-- fragments as tags -->
+				<div class="fragments">
+					<ul class="fragments-list">
+						<li>play with magic</li>
+						<li>chocolate milk dreams</li>
+						<li>orange sunshine</li>
+					</ul>
+
+					<a ng-click="addNew()">New Fragment</a>
+
+					<!-- add new fragment -->
+					<form class="new-fragment">
+						<input name="input_fragment">
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	</div>
+</div>

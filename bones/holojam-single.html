@@ -1,0 +1,89 @@
+<!-- Display a single Hølojam -->
+<div class="single-holojam overlay" id="single-holojam"> 
+
+	<!-- !! embed HØLØJAM here !! -->
+	<ng-include ng-cloak src="'~/' + holojam.start" scope="" onload="loadCanvas()"></ng-include>
+	<div id="{{holojam.slug}}_hook"></div>
+	<!-- !! embed HØLØJAM here !! -->
+
+	<div class="nav-wrapper">
+		<div class="nav-inner">
+
+			<nav class="single-holojam">
+				<h3 class="star">&#9733;</h3>
+				<h2 class="star">&#9733;</h2>
+				<h1 class="star">&#9733;</h1>
+							
+				<a class="prev-holojam prev arrow" ng-click="prevHolojam()">&#9664;</a>
+							
+				<a id="atom-controller" ng-click="showNav()" class="atom-control">			
+					<img class="img-responsive" src="core/img/white-atom.png">
+				</a>
+							
+				<a class="next-holojam next arrow" target="_self" ng-click="nextHolojam()">&#9654;</a>
+
+				<h1 class="star">&#9733;</h1>
+				<h2 class="star">&#9733;</h2>
+				<h3 class="star">&#9733;</h3>
+
+			</nav>
+
+
+		</div>
+	</div>
+
+</div>
+<!-- Display a single Hølojam -->
+
+
+<!-- nav overlayer -->
+<div ng-controller="NavController" id="nav-overlay" class="overlay nav-overlay">
+
+	<div class="container">
+		<div class="row nav-row">
+			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+				
+				<div id="nav-popup-box" class="embossed-light nav-popup-box">
+					<h1>HOLOJAMS</h1>
+
+					<p>I built this for you</p>
+
+<!-- 					<nav class="popover-nav">
+						<ul>
+							<li><a ng-click="changeView('info');">INFO</a></li> /
+							<li><a href="#/info">ARCADE</a></li> /							
+							<li><a href="#/info">ARTWORK</a></li> /
+							<li><a ng-click="changeView('contact');">CONTACT</a></li>
+						</ul>
+					</nav> -->
+				</div>	
+<!-- 
+				<div id="nav-info-box" class="embossed-light nav-popup-box">
+					<h2>Info</h2>
+					<p>I built this for you</p>
+					<p><small>i wanted to be an artist so i travelled through chaos for days.</small></p>
+					<P>love is time, codes, nature, grids, stars, patterns, atoms</P>
+				</div>								
+
+				<div id="nav-contact-box" class="embossed-light nav-popup-box">
+					<h2>Contact</h2>
+					<p>niadzi @ yahoo.co.uk</p>
+				</div>	 -->							
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- nav overlayer -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56114344-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

@@ -1,0 +1,23 @@
+
+<!-- ... LOADING ... -->
+<header class="row">
+	<div class="col-xs-12">
+		<img src="core/img/HOLOJAMS_LOGO_BIG_WHITE.png" class="smalll-top-logo fade-in fade-in-3s">
+	</div>
+</header>
+<!-- ... LOADING ... -->
+
+<!--  ... MAIN PAGE GALLERY ... -->
+<div class="row">
+	<div class="holojam-gallery-outer col-xs-4" ng-repeat="holojam in holojams track by $index">
+
+		<img ng-src="!/{{holojam.image}}" class="img-responsive" />
+	    <h3>{{holojam.title}}</h3>
+	    <h4>
+	    	<a ng-href="#/{{holojam.slug}}"> 
+	    		{{holojam.slug}}
+	    	</a>
+	   	</h4>
+	</div>  
+</div>
+<!-- ... MAIN PAGE GALLERY ... -->

@@ -1,0 +1,48 @@
+<section ng-controller="SongContentController">	
+
+	<ng-include src="'parts/song-nav.html'"></ng-include>
+
+	<header class="row">
+		<h2 class="col-lg-12" ng-repeat="song in song">title: {{ song.title }}</h2>
+	</header>
+
+	<article class="row">
+
+		<div class="list-group">
+
+		  <a href="" class="list-group-item active">
+		    <h4 class="list-group-item-heading">People</h4>
+		    <p class="list-group-item-text">fragment...fragment...fragment...</p>
+		  </a>
+
+		  <a href="" class="list-group-item active">
+		    <h4 class="list-group-item-heading">Things</h4>
+		    <p class="list-group-item-text">fragment...fragment...fragment...</p>
+		  </a>
+
+		  <a href="" class="list-group-item active">
+		    <h4 class="list-group-item-heading">Activities</h4>
+		    <p class="list-group-item-text">fragment...fragment...fragment...</p>
+		  </a>
+
+		  <a href="" class="list-group-item active">
+		    <h4 class="list-group-item-heading">Information</h4>
+		    <p class="list-group-item-text">fragment...fragment...fragment...</p>
+		  </a>
+
+		  <a href="" class="list-group-item active">
+		    <h4 class="list-group-item-heading">Place</h4>
+		    <p class="list-group-item-text">fragment...fragment...fragment...</p>
+		  </a>
+
+		  <a href="" class="list-group-item active">
+		    <h4 class="list-group-item-heading">Time</h4>
+		    <p class="list-group-item-text">fragment...fragment...fragment...</p>
+		  </a>		  
+
+		</div>				
+
+
+	</article>
+
+</section>

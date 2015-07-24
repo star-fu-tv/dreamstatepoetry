@@ -1,0 +1,38 @@
+/* - - - - - - - - - - - - - */
+/* - - - SET THE VIBES - - - */
+/* - - - - - - - - - - - - - */
+@import "compass/css3";
+@import "import/colours";
+@import "import/typography";
+@import "import/mixins";
+@import "import/forms";
+@import "import/buttons";
+
+/* - - - - - - - - - - - - - */
+/* - - - MEDIA QUERIES - - - */
+/* - - - - - - - - - - - - - */
+
+/* SMALL SCREENS */
+/* Define basic styles */
+@media only screen { @import "import/base" } 
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) { @import "import/base" } 
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { @import "import/640up" } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {@import "import/640up"  } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { @import "import/1024up"  } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { @import "import/1024up" } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { @import "import/1440up"  } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { @import "import/1440up" } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */

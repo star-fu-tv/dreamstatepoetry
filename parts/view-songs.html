@@ -1,0 +1,5 @@
+<section id="all-songs" class="row" ng-controller="SongsCtrl">
+	<ul class="list-group col-lg-6">
+	  <li ng-repeat="song in songs track by $index" class="list-group-item"><a href="#/song/{{ song.id }}">{{ song.title }}</li>
+	</ul>
+</section>
